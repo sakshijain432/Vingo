@@ -11,7 +11,7 @@ const app = express()
 const port = process.env.PORT || 5000
 //kon kon s url bakend ko use kr skt h
 app.use(cors({
-    origin : "https://localhost:5173",                     // kon backend ki api ko access kr skta h
+    origin : "http://localhost:5173",                     // kon backend ki api ko access kr skta h
     credentials:true
 }))
 app.use(express.json())
