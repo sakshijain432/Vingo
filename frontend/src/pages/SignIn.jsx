@@ -26,9 +26,10 @@ function SignIn() {
         password,
       
       },{withCredentials:true})
-      console.log(result);
+      console.log(result.data);
     } catch (error) {
-      console.log(error);
+       const message = error.response?.data?.message;
+      console.log(message);
     }
   }
   return (
@@ -52,7 +53,7 @@ function SignIn() {
        <button className='absolute right-3 top-3.5 text-gray-500 cursor-pointer' onClick={() => {setShowPassword(prev => !prev)}}>{!showPassword?<FaRegEye /> : <FaRegEyeSlash /> } </button>
         </div>
     </div>
-    <div className='text-right mb-4 text-[#ff4d2d] font-medium ' onClick={() => navigate('/forgot-password')}>Forgot Password</div>
+    <div className='text-right mb-4 text-[#ff4d2d] font-medium cursor-pointer' onClick={() => navigate('/forgot-password')}>Forgot Password</div>
   
     <button className={`w-full mt-4 flex items-center justify-center gap-2 border rounded-lg px-4 py-2 transition duration-200 bg-[#ff4d2d] text-white hover:bg-[#e64323] cursor-pointer`} onClick={handleSignIn}>Sign In</button>
     <button className='w-full mt-4 flex items-center justify-center gap-2 border rounded-lg px-4 py-2 transition duration-200 border-gray-400 hover:bg-gray-100 cursor-pointer'><FcGoogle size={20}/><span>SignIn with Google</span></button>

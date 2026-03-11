@@ -37,7 +37,7 @@ function SignUp() {
   }
   return (
     <div className='min-h-screen w-full flex items-center justify-center p-4' style={{backgroundColor:bgColor}}>
-    <div className={`bg-white rounded-xl shadow-lg w-full max-w-md p-8 border-[ 1px]`} style={{border:`1px solid ${borderColor}`}}>
+    <div className={`bg-white rounded-xl shadow-lg w-full max-w-md p-8 border`} style={{border:`1px solid ${borderColor}`}}>
       <h1 className={`text-3xl mb-2 font-bold `} style={{color :primaryColor}}>Vingo</h1>
       <p className='text-gray-600 mb-8'>Create your account to get started with delicios food deliveries</p>
     {/**  */}
