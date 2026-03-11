@@ -9,7 +9,7 @@ import cors from 'cors'
 
 const app = express()
 const port = process.env.PORT || 5000
-//kon kon s url bakend ko use kr skt h
+//kon kon s url backend ko use kr skt h
 app.use(cors({
     origin : "http://localhost:5173",                     // kon backend ki api ko access kr skta h
     credentials:true
