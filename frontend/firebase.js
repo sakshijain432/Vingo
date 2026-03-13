@@ -2,8 +2,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -12,8 +10,9 @@ const firebaseConfig = {
   projectId: "vingo-220de",
   storageBucket: "vingo-220de.firebasestorage.app",
   messagingSenderId: "322125452833",
-  appId: "1:322125452833:web:0b795f6fd2da0b045bf560"
+  appId: "1:322125452833:web:0f8191f225f5c7285bf560"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
