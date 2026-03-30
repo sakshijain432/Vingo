@@ -3,6 +3,7 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import { serverUrl } from '../App';
 import axios from 'axios';
+import ClipLoader from "react-spinners/ClipLoader";
 
 function ForgotPassword() {
     const [step,setStep] = useState(1)
@@ -107,3 +108,4 @@ function ForgotPassword() {
 }
 
 export default ForgotPassword
+
